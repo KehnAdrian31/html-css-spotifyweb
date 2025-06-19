@@ -111,33 +111,52 @@ footer{
   text-transform: uppercase;
 }
 
+.recently-played{
+  margin: 20px;
+}
 .rp-title{
   color: white;
   font-size: 30px;
-  margin-left: 20px;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
-.rp-container{
-  margin: 0 auto;
-  padding: 20px;
-}
 
-.rp-songs{
+.songs{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.rp-col{
-  width: calc(100 / 6 - 20px);
+.col{
   text-align: center;
 }
 
 .album{
   color: white;
+  padding: 10px 0;
 }
 
 .subtitle{
   color: #7A7D81;
+  font-weight: 900;
+  font-size: 17px;
+
+}
+
+/* personalised songs */
+.personalised-section{
+  margin: 20px;
+}
+
+.title{
+  color: white;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.desc{
+  color: #7A7D81;
+  font-size: 17px;
+  padding-bottom: 30px;
 }
