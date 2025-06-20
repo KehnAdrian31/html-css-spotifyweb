@@ -25,7 +25,10 @@ footer{
 #sidebar{
   width: 300px;
   background-color: black;
-  height: 100%
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo{
@@ -305,8 +308,37 @@ footer{
   display: block;
 }
 
-
-
 .sound-adjust{
   width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.right-icons{
+  color: white;
+  font-size: 30px;
+}
+
+.volume{
+   width: 50%;
+  background-color: grey;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.volume-adjustment{
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: silver;
+  height: 5px;
+  width: 20%;
+  border-radius: 5px;
+}
+
+.sound-adjust:hover .volume-adjustment{
+  position: relative;
+  background-color: green;
 }
