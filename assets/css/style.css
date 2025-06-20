@@ -169,7 +169,7 @@ footer{
 .subtitle{
   color: #7A7D81;
   font-weight: 900;
-  font-size: 17px;
+  font-size: 20px;
 
 }
 
@@ -187,7 +187,7 @@ footer{
 
 .desc{
   color: #7A7D81;
-  font-size: 17px;
+  font-size: 20px;
   padding-bottom: 30px;
 }
 
@@ -208,6 +208,8 @@ footer{
 
 .footer-container{
   padding: 30px;
+  position: relative;
+  z-index: 1000;
 }
 
 .footer-row{
@@ -253,7 +255,57 @@ footer{
   color: rgb(204, 203, 203);
   gap: 50px;
   font-size: 40px;
+  margin-bottom: 40px;
 }
+
+.controller-time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-stamp{
+  color: white;
+}
+.player-bar{
+  width: 60%;
+  background-color: grey;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.elapsed-time{
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: silver;
+  height: 5px;
+  width: 20%;
+  border-radius: 5px;
+}
+
+.controller-point{
+  position: relative;
+  left: 100%;
+  bottom: 100%;
+  display: none;
+  width: 15px;
+  height: 15px;
+  background-color: silver;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.controller-time:hover .elapsed-time{
+  background-color: green;
+}
+
+.controller-time:hover .controller-point{
+  display: block;
+}
+
+
 
 .sound-adjust{
   width: 15%;
