@@ -5,7 +5,7 @@
 }
 
 main{
-  height: calc(100vh - 150px);
+  height: calc(100vh - 200px);
   display: flex;
 }
 
@@ -17,7 +17,7 @@ main{
 }
 
 footer{
-  height: 150px;
+  height: 200px;
   background-color: #080B12;
 }
 
@@ -202,4 +202,59 @@ footer{
 
 .width94 img{
   width: 94%;
+}
+
+/* footer */
+
+.footer-container{
+  padding: 30px;
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playing{
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.playing img{
+  width: 24%;
+  margin-right: 20px;
+}
+
+.song{
+  margin-right: 80px;
+}
+.song-title{
+  color: white;
+}
+
+.singer{
+  color: #7A7D81;
+  font-size: 20px;
+}
+
+.icons{
+  color: #7A7D81;
+  font-size: 30px;
+}
+
+.player-controller{
+  width: 70%;
+}
+
+.controller-icons{
+  display: flex;
+  justify-content: center;
+  color: rgb(204, 203, 203);
+  gap: 50px;
+  font-size: 40px;
+}
+
+.sound-adjust{
+  width: 15%;
 }
