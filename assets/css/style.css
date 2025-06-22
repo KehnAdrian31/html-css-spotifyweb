@@ -35,6 +35,25 @@ footer{
   width: 70%;
   margin-bottom: 30px;
 }
+
+.home{
+  position: relative;
+  height: max-content;
+}
+
+.home::after{
+  content: attr(a);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: greenyellow;
+  position: absolute;
+}
+
+.home-search-library div:hover{
+  color: white;
+}
 .home-search-library img{
   width: 13%;
   margin-right: 10px;
@@ -60,6 +79,9 @@ footer{
   color: white;
 }
 
+.crea h4, li:hover{
+  color: white;
+}
 
 .plus-entity{
   color: black;
@@ -119,29 +141,44 @@ footer{
 .upgrade{
     color: rgb(255, 255, 255);
     margin-right: 20px ;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 40px;
     border: white 1px solid;
 }
 
-.page-container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.column:hover {
+  transform: scale(1,2);
 }
 
 .page-row{
-  display: flex;
+ padding: 20px;
+ display: flex;
+ justify-content: center;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  gap: 40px;
+  list-style-type: none;
+  color: #7A7D81;
+  font-size: 24px;
 }
 
-.col-18{
-  width: calc(100% / 6 - 20px);
-  color: #7A7D81;
-  font-size: 20px;
-  text-transform: uppercase;
+.page-row span:hover{
+  color: white;
+}
+
+.evidenza{
+  position: relative;
+  width: max-content;
+}
+
+.evidenza::after{
+  content: attr(a);
+  background: greenyellow;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
 }
 
 .recently-played{
@@ -173,7 +210,34 @@ footer{
   color: #7A7D81;
   font-weight: 900;
   font-size: 20px;
+}
 
+.image{
+  position: relative;
+}
+.image img{
+  display: block;
+  width: 100%;
+}
+
+.image i {
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 500%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.image i:hover{
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* personalised songs */
@@ -242,10 +306,17 @@ footer{
   color: #7A7D81;
   font-size: 20px;
 }
+.singer:hover{
+  color: white;
+  text-decoration: underline;
+}
 
 .icons{
   color: #7A7D81;
   font-size: 30px;
+}
+.icons:hover{
+  color: white;
 }
 
 .player-controller{
@@ -259,6 +330,10 @@ footer{
   gap: 50px;
   font-size: 40px;
   margin-bottom: 40px;
+}
+
+.fa-circle-play:hover{
+  color: white;
 }
 
 .controller-time{
