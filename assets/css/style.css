@@ -292,7 +292,7 @@ footer{
 }
 
 .playing{
-  width: 15%;
+  width: 25%;
   display: flex;
   align-items: center;
 }
@@ -327,7 +327,7 @@ footer{
 }
 
 .player-controller{
-  width: 70%;
+  width: 50%;
 }
 
 .controller-icons{
@@ -391,7 +391,7 @@ footer{
 }
 
 .sound-adjust{
-  width: 15%;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -425,7 +425,7 @@ footer{
   background-color: green;
 }
 
-@media all and (max-width: 764px){
+@media all and (max-width: 965px){
   #sidebar{
     width: 75px;
   }
