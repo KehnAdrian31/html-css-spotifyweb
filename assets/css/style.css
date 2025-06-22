@@ -31,10 +31,17 @@ footer{
   justify-content: space-between;
 }
 
-.logo{
+.logo-large{
   width: 70%;
   margin-bottom: 30px;
+  display: block;
 }
+
+.logo-small{
+  display: none;
+  margin-bottom: 30px;
+}
+
 
 .home{
   position: relative;
@@ -416,4 +423,58 @@ footer{
 .sound-adjust:hover .volume-adjustment{
   position: relative;
   background-color: green;
+}
+
+@media all and (max-width: 764px){
+  #sidebar{
+    width: 75px;
+  }
+
+  .top-side, .bottom-side{
+    padding: 10px;
+  }
+  .logo-large{
+    display: none;
+  }
+  .logo-small{
+    display: block;
+    margin: 0;
+  }
+
+  .home-search-library span{
+    display: none;
+  }
+  
+  .text-white{
+    display: none;
+  }
+  
+  .crea h4, li{
+    display: none;
+  }
+
+  .home-search-library img{
+    width: 100%;
+  }
+
+  .profile img{
+    width: 100%;
+  }
+
+  .install{
+    text-align: center;
+  }
+  .install-text{
+    display: none;
+  }
+  .profile-name{
+    display: none;
+  }
+#content{
+  height: 100%;
+  width: calc(100vw - 75px);
+  background-color: #141922;
+  overflow-y: auto;
+}
+
 }
